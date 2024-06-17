@@ -12,7 +12,7 @@ RUN pip install -r /app/src/requirements.txt
 
 ENV PYTHONPATH=${PYTHONPATH}:/app/src
 
-RUN tail -f /var/log/steps.log 
+CMD tail -f /dev/null
 
 #ENTRYPOINT ["python3"]
 
